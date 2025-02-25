@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Fraunces';
+    src: url('./images/fonts/Fraunces/static/Fraunces_144pt-Bold.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./images/fonts/Montserrat/static/Montserrat-Medium.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    line-height: 1.7em;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.product-card{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin: 20px;
+    max-width: 375px;
+    overflow: hidden;
+    
+}
+
+.product-image img{
+    width: 100%;
+    display: block;
+}
+
+.product-details{
+    padding: 20px;
+}
+.product-category{
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.product-title{
+    font-family: 'Fraunces',serif;
+    font-size: 32px;
+    margin: 10px;
+    color: hsl(212, 21%, 14%);
+}
+.product-description{
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.product-price{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.new-price{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+    margin-right: 20px;
+}
+
+.old-price{
+    text-decoration: line-through;
+    font-size: 14px;
+    display: block;
+}
+
+.add-to-cart{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    padding: 15px 20px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+.add-to-cart img{
+    margin-right: 10px;
+}
+
+.add-to-cart:hover{
+    background-color: hsl(158, 36%, 27%);
+}
+
+@media(min-width:600px){
+    .product-card{
+        max-width: 600px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .product-image{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .product-details{
+        padding: 30px;
+
+    }
+    .product-title{
+        font-size: 36px;
+    }
+    .product-description{
+        font-size: 15px;
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

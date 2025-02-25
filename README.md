@@ -12,7 +12,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- 
+  
 
 ## Overview
 
@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github.com](https://github.com/Iamojochenemi/Product-preview-card.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [github.io](https://iamojochenemi.github.io/Product-preview-card/)
 
 ## My process
 
